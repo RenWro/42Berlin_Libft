@@ -232,30 +232,30 @@ Makefile
 
 A Makefile defines set of tasks to be executed, in shell script. These tasks are writed on a target in this format:
 
-target: prerequisites
-<TAB> recipe
+	target: prerequisites
+	<TAB> recipe
 
 such as:
 
-fclean:	clean
-	@echo "$(NAME): $(RED)$(NAME) was deleted$(RESET)"
-	${REMOVE} ${NAME}
-	@echo
+	fclean:	clean
+		@echo "$(NAME): $(RED)$(NAME) was deleted$(RESET)"
+		${REMOVE} ${NAME}
+		@echo
 
 The recipe(the commands @echo and so forth) for the target fclean will only be executed when the target clean (the prerequisite) be executed. a target works without prerequisites too:
 
-clean:
-	@echo "\n$(NAME): $(RED)object files were deleted$(RESET)"
-	${REMOVE} ${OBJS} ${BONUS_OBJS}
-	@echo
+	clean:
+		@echo "\n$(NAME): $(RED)object files were deleted$(RESET)"
+		${REMOVE} ${OBJS} ${BONUS_OBJS}
+		@echo
 
 As you could see, there are a few variables inside the recipe. The variables can be assigned just as follow:
 
-GREEN		= \033[0;32m
-RED		= \033[0;31m
-RESET		= \033[0m
-CC		= clang
-FLAGS 		= -Wall -Werror -Wextra
+	GREEN		= \033[0;32m
+	RED		= \033[0;31m
+	RESET		= \033[0m
+	CC		= clang
+	FLAGS 		= -Wall -Werror -Wextra
 
 To use the variable value, just use the $ sign with parenthesis:
 
@@ -267,7 +267,7 @@ It is not necessary for the target to be a file. It could be just a name for the
 
 But if you have a file with the exact name of your phony target inside of your repo, things can get a little weird. To protected your Makefile from this, just use phony and the name of all your phony targets used:
 
-.PHONY:		all clean fclean re bonus
+	.PHONY:		all clean fclean re bonus
 
 Here at 42 school, the subject says that
 
@@ -287,7 +287,7 @@ re just removes the objects created to make the library and the $(NAME), to then
 
 You can run a rule on your Makefile this way:
 
-make $(target_name)
+	make $(target_name)
 
 such as:
 
@@ -301,19 +301,19 @@ Colorful Makefile
 
 Choose your color, add it as a variable and use in your Makefile:
 
-BLACK		="\[\033[0;30m\]"        
-RED		="\[\033[0;31m\]"       
-GREEN		="\[\033[0;32m\]"      
-YELLOW		="\[\033[0;33m\]"       
-BLUE		="\[\033[0;34m\]"        
-PURPLE		="\[\033[0;35m\]"     
-CYAN		="\[\033[0;36m\]"         
-WHITE		="\[\033[0;37m\]"    
-RESET		="\033[0m"
+	BLACK		="\[\033[0;30m\]"        
+	RED		="\[\033[0;31m\]"       
+	GREEN		="\[\033[0;32m\]"      
+	YELLOW		="\[\033[0;33m\]"       
+	BLUE		="\[\033[0;34m\]"        
+	PURPLE		="\[\033[0;35m\]"     
+	CYAN		="\[\033[0;36m\]"         
+	WHITE		="\[\033[0;37m\]"    
+	RESET		="\033[0m"
 
 You could use it this way:
 
-@echo "$(NAME): $(RED)$(NAME) was deleted$(RESET)"
+	@echo "$(NAME): $(RED)$(NAME) was deleted$(RESET)"
 
 So $(NAME) was deleted will be printed in red.
 
@@ -324,14 +324,14 @@ How does it work?
 
 The functioning of the library can be explained just by breaking down the Makefile. The library functions are all coded in .c files. These files are compiled into objects (.o) to be later inserted in the library, we do this just by compiling with the -c and -o flags.
 
-  clang -c example1.c -o example1.o
-  clang -c example2.c -o example2.o
-  clang -c example3.c -o example3.o
-  clang -c example4.c -o example4.o
+  	clang -c example1.c -o example1.o
+ 	clang -c example2.c -o example2.o
+ 	clang -c example3.c -o example3.o
+  	clang -c example4.c -o example4.o
 
 And then using ar rcs command to create the library with all the objects.
 
-  ar rcs libft.a example1.o example2.o example3.o example4.o
+  	ar rcs libft.a example1.o example2.o example3.o example4.o
 
 With the files transformed into objects, we don't need to compile all the code again in case there is any change, only the file that was changed would be recompiled.
 
@@ -341,7 +341,7 @@ It aims to create a library called libft.a from the source files.
 
 To create this library, clone the project:
 
-	git clone https://github.com/augustobecker/libft libft
+	git clone https://github.com/RenWro/42Berlin_Libft/ libft
 
 Enter the repository:
 
