@@ -24,24 +24,28 @@ Rigor
 C programming can be very tedious when one doesn’t have access to the highly useful standard functions. This project is about understanding the way these functions work, implementing and learning to use them. Your will create your own library. It will be helpful since you will use it in your next C school assignments.
 Take the time to expand your libft throughout the year. However, when working on a new project, don’t forget to ensure the functions used in your library are allowed in the project guidelines.
 
-ℹ️ A C static library with recoded standard functions
+<p align="center">
+![image](https://github.com/user-attachments/assets/56d78c1b-0cf0-41a3-906a-1f20af822a9c)
+</p>
 
-125/100 ✅
+<p align="center">
+<h1>A C static library with recoded standard functions</h1>
+</p>
 
-Index
+<h2>Index</h2>
 
-    What is Libft?
-    Requirements
-    Functions
-    Makefile
-        Colorful Makefile
-    How does it work?
-    How do I use the library?
-    How do I test it?
-    42 Cursus
-    Author
+<ul>
+<li>What is Libft?</li>
+<li>Requirements</li>
+<li>Functions</li>
+<li>Makefile</li>
+    <li>How does it work?</li>
+   <li> How do I use the library?</li>
+    <li>How do I test it?</li>
+    <li>42 Cursus</li>
+</ul>
 
-What is Libft?
+<h3>What is Libft?</h3>
 
 The first project at 42 programming school. It consists of a static library with recoded standard functions in C that runs and compiles the code using a Makefile. The library can be used as a support in future school's projects, since it's not allowed to use the original functions. Once you finish the project, you can (and should) include more functions to Libft than previously asked. For example, now the projects get_next_line and ft_printf are part of my library.
 
@@ -63,7 +67,8 @@ Bonus.
 • lstnew • lstadd_front • lstsize • lstlast • lstadd_back • lstdelone • lstclear • lstiter • lstmap
 Requirements
 
-⚠️ The project must be written in accordance with the Norm
+<h3>The project must be written in accordance with the Norm</h3>
+
 The Norm is a programming standard that defines a set of rules to follow when writing code at 42. It applies to all C projects within the Common Core by default, and to any project where it's specified. These are some of them:
 
 Each function must be maximum 25 lines, not counting the function's own curly brackets.
@@ -89,7 +94,7 @@ Using the command libtool to create your library is forbidden.
 
 Your Makefile must compile with the flags -Wall, -Wextra and -Werror.
 
-Functions
+<h2>Functions</h2>
 
 Those are the my Libft's functions today - some of them are not part of the subject - Once we're allowed to keep expanding our library to help us in other projects at 42.
 Functions from <ctype.h>
@@ -218,7 +223,7 @@ Useful Functions
 • ft_free_str_array - free memory from an array of strings.
 Makefile
 
-ℹ️ A handy automation tool to Run and compile your programs more efficiently.
+<h2>Makefile</h2>
 
 A Makefile defines set of tasks to be executed, in shell script. These tasks are writed on a target in this format:
 
@@ -378,4 +383,25 @@ cd libftTester
 make m
 make b
 
-42 is a global education initiative that proposes a new way of learning technology: no teachers, no classrooms, students learning from their fellow students (peer to peer learning), with a methodology that develops both computing and life skills. Not to mention that it's completely free of charge and open to all with no prerequisites.
+![image](https://github.com/user-attachments/assets/d6ff7aca-1b37-4d02-a0b2-c0797fe3bceb)
+
+
+<p align="center"><h1>About 42 Berlin</h1></p>
+
+![image](https://github.com/user-attachments/assets/2c94872d-0def-429f-9b3d-5d71c209ad25)
+
+
+
+42 is a global education initiative that proposes a new way of learning technology: all 42 schools are using peer2peer gamified methodology and are completely tuition free for students. 42 is a brand well known by employers in many countries as one of the most rigorous educational methodologies. 
+
+We’re proud to have some of Germany’s largest tech companies by our side. Thanks to their donations and support, our education is accessible to all aspiring coders. Find out more about 42 Berlin partners here.
+Volkswagen, partner of 42 Berlin coding school:
+<ul>
+<li>SAP logo</li>	
+<li>Capgemini logo</li>
+<li>Microsoft logo</li>
+<li>T-Systems logo</li>
+<li>Cariad logo</li>
+<li>Bayer logo</li>
+</ul>
+
