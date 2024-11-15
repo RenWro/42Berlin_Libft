@@ -25,7 +25,7 @@ C programming can be very tedious when one doesn’t have access to the highly u
 Take the time to expand your libft throughout the year. However, when working on a new project, don’t forget to ensure the functions used in your library are allowed in the project guidelines.
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/56d78c1b-0cf0-41a3-906a-1f20af822a9c)" alt="image">
+<img src="https://github.com/user-attachments/assets/56d78c1b-0cf0-41a3-906a-1f20af822a9c" alt="image">
 </p>
 
 <p align="center">
