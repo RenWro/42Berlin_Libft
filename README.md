@@ -363,13 +363,14 @@ You have to tell the file where your library resides:
 clang example.c libft.a
 
 That's it. Now run it using ./a.out
-How do I test it?
+
+<h2>How do I test it?</h2>
 
 To test the code we're going to be using @jgambard's Libft Tester. There are some good others but I'll only be covering this one.
 
 To test the code in this repo Clone this repo and cd into it:
 
-git clone https://github.com/augustobecker/libft libft
+git clone https://github.com/RenWro/42Berlin_Libft/ libft
  
 cd libft/	
 
@@ -393,6 +394,14 @@ make b
 
 
 42 is a global education initiative that proposes a new way of learning technology: all 42 schools are using peer2peer gamified methodology and are completely tuition free for students. 42 is a brand well known by employers in many countries as one of the most rigorous educational methodologies. 
+
+PROJECT-BASED LEARNING
+
+Before you start studying with us, you need to complete the Piscine, a 26-day coding challenge.  Once you pass it your 12-18 month coding journey begins. 
+
+The 42 Berlin curriculum, inspired by École 42 in Paris, focuses on hands-on learning and peer collaboration. Furthermore, with 12,000+ global students, it teaches coding from scratch, supporting beginners and advancing those with prior knowledge. 
+
+You advance your knowledge by completing practical projects which then need to be evaluated both by our evaluation software and your peers. This learning process makes our graduates extremely good at communication as well as prepares them for an independent work environment. 
 
 We’re proud to have some of Germany’s largest tech companies by our side. Thanks to their donations and support, our education is accessible to all aspiring coders. Find out more about 42 Berlin partners here.
 Volkswagen, partner of 42 Berlin coding school:
