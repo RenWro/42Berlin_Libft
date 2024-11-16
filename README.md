@@ -24,10 +24,56 @@ Rigor
 C programming can be very tedious when one doesn’t have access to the highly useful standard functions. This project is about understanding the way these functions work, implementing and learning to use them. Your will create your own library. It will be helpful since you will use it in your next C school assignments.
 Take the time to expand your libft throughout the year. However, when working on a new project, don’t forget to ensure the functions used in your library are allowed in the project guidelines.
 
+---
+
+<h1>At a glance</h1>
+
+To compile the library, one should use the following commands:
+
+	make or make all - Compiles the library.
+	make clean - Removes the object files generated during compilation.
+	make fclean - Removes the compiled library and the object files.
+	make re - Performs a clean recompilation of the library.
+	make bonus - Compiles the library including the bonus part. (because this version is the latest, for original libft I suggest switching branch)
+
+<h3>To include the libft library in your project and use it in your code, follow these steps:</h3>
+
+1. Compile the libft library using the provided Makefile. This will generate the libft.a file.
+2. Place the libft.a file in a directory of your choice, for example, lib.
+3. In your project directory, create a directory called include if it doesn't already exist.
+4. Copy the header files from the libft library into the include directory. These header files typically have a .h extension, such as libft.h.
+5. In your source code files where you want to use the libft library functions, include the corresponding header file using the following directive:
+
+		#include "libft.h"
+
+6. During compilation, you need to link your project with the libft library. Add the following flag to your compilation command:
+
+		-L/path/to/lib -lft
+
+7. Replace /path/to/lib with the actual path to the directory where you placed the libft.a file.
+For example, if you placed the libft.a file in a directory called lib inside your project directory, the compilation command would look like this:
+
+		gcc your_program.c -L./lib -lft -o your_program
+
+8. Now you can use the functions provided by the libft library in your code.
+For example, if you want to use the strlen function from the library, you can call it like this:
+
+		size_t length = ft_strlen("Hello, world!");
+
+10. Make sure to prefix the library functions with ft_ to differentiate them from standard library functions.
+You have successfully included the libft library in your project and can use its functions in your code. 
+
+<h3>Default Compilation Flags</h3>
+The Makefile uses the following compilation flags:
+
+	-Wall -Wextra -Werror - Enables additional warnings and treats warnings as errors.
+	-I. - Specifies the include directory for header files.
+
+---
+ 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/56d78c1b-0cf0-41a3-906a-1f20af822a9c" alt="image">
 </p>
-
 <p align="center">
 <h1>A C static library with recoded standard functions</h1>
 </p>
