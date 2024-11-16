@@ -149,7 +149,7 @@ Your Makefile must compile with the flags -Wall, -Wextra and -Werror.
 
 Those are the my Libft's functions today - some of them are not part of the subject - Once we're allowed to keep expanding our library to help us in other projects at 42.
 
-<h3>Functions from <ctype.h></h3>
+<h3>Functions from ctype.h </h3>
 
 • ft_isalpha - checks for an alphabetic character.
 
@@ -165,7 +165,7 @@ Those are the my Libft's functions today - some of them are not part of the subj
 
 • ft_tolower - convert char to lowercase.
 
-<h3>Functions from <string.h></h3>
+<h3>Functions from string.h</h3>
 
 • ft_memset - fill memory with a constant byte.
 
@@ -195,7 +195,7 @@ Those are the my Libft's functions today - some of them are not part of the subj
 
 • ft_strdup - creates a dupplicate for the string passed as parameter.
 
-<h3>Functions from <stdlib.h></h3>
+<h3>Functions from stdlib.h</h3>
 
 • ft_atoi - convert a string to an integer.
 
@@ -248,7 +248,8 @@ Those are the my Libft's functions today - some of them are not part of the subj
 • ft_count_occurrences - returns the number of occurrences of a char in a string.
 
 • ft_free_str_array - free memory from an array of strings.
-Makefile
+
+---
 
 <h2>Makefile</h2>
 
@@ -422,7 +423,7 @@ Go into the test folder and run the mandatory test and then the bonus test:
 
 42 is a global education initiative that proposes a new way of learning technology: all 42 schools are using peer2peer gamified methodology and are completely tuition free for students. 42 is a brand well known by employers in many countries as one of the most rigorous educational methodologies. 
 
-PROJECT-BASED LEARNING
+<h3>PROJECT-BASED LEARNING</h3>
 
 Before you start studying with us, you need to complete the Piscine, a 26-day coding challenge.  Once you pass it your 12-18 month coding journey begins. 
 
