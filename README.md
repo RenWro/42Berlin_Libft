@@ -24,10 +24,56 @@ Rigor
 C programming can be very tedious when one doesn’t have access to the highly useful standard functions. This project is about understanding the way these functions work, implementing and learning to use them. Your will create your own library. It will be helpful since you will use it in your next C school assignments.
 Take the time to expand your libft throughout the year. However, when working on a new project, don’t forget to ensure the functions used in your library are allowed in the project guidelines.
 
+---
+
+<h1>At a glance</h1>
+
+To compile the library, one should use the following commands:
+
+	make or make all - Compiles the library.
+	make clean - Removes the object files generated during compilation.
+	make fclean - Removes the compiled library and the object files.
+	make re - Performs a clean recompilation of the library.
+	make bonus - Compiles the library including the bonus part. (because this version is the latest, for original libft I suggest switching branch)
+
+<h3>To include the libft library in your project and use it in your code, follow these steps:</h3>
+
+1. Compile the libft library using the provided Makefile. This will generate the libft.a file.
+2. Place the libft.a file in a directory of your choice, for example, lib.
+3. In your project directory, create a directory called include if it doesn't already exist.
+4. Copy the header files from the libft library into the include directory. These header files typically have a .h extension, such as libft.h.
+5. In your source code files where you want to use the libft library functions, include the corresponding header file using the following directive:
+
+		#include "libft.h"
+
+6. During compilation, you need to link your project with the libft library. Add the following flag to your compilation command:
+
+		-L/path/to/lib -lft
+
+7. Replace /path/to/lib with the actual path to the directory where you placed the libft.a file.
+For example, if you placed the libft.a file in a directory called lib inside your project directory, the compilation command would look like this:
+
+		gcc your_program.c -L./lib -lft -o your_program
+
+8. Now you can use the functions provided by the libft library in your code.
+For example, if you want to use the strlen function from the library, you can call it like this:
+
+		size_t length = ft_strlen("Hello, world!");
+
+10. Make sure to prefix the library functions with ft_ to differentiate them from standard library functions.
+You have successfully included the libft library in your project and can use its functions in your code. 
+
+<h3>Default Compilation Flags</h3>
+The Makefile uses the following compilation flags:
+
+	-Wall -Wextra -Werror - Enables additional warnings and treats warnings as errors.
+	-I. - Specifies the include directory for header files.
+
+---
+ 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/56d78c1b-0cf0-41a3-906a-1f20af822a9c" alt="image">
 </p>
-
 <p align="center">
 <h1>A C static library with recoded standard functions</h1>
 </p>
@@ -102,7 +148,8 @@ Your Makefile must compile with the flags -Wall, -Wextra and -Werror.
 <h2>Functions</h2>
 
 Those are the my Libft's functions today - some of them are not part of the subject - Once we're allowed to keep expanding our library to help us in other projects at 42.
-Functions from <ctype.h>
+
+<h3>Functions from ctype.h </h3>
 
 • ft_isalpha - checks for an alphabetic character.
 
@@ -117,7 +164,8 @@ Functions from <ctype.h>
 • ft_toupper - convert char to uppercase.
 
 • ft_tolower - convert char to lowercase.
-Functions from <string.h>
+
+<h3>Functions from string.h</h3>
 
 • ft_memset - fill memory with a constant byte.
 
@@ -146,12 +194,14 @@ Functions from <string.h>
 • ft_strnstr - locate a substring in a string.
 
 • ft_strdup - creates a dupplicate for the string passed as parameter.
-Functions from <stdlib.h>
+
+<h3>Functions from stdlib.h</h3>
 
 • ft_atoi - convert a string to an integer.
 
 • ft_calloc - allocates memory and sets its bytes' values to 0.
-Non-standard functions
+
+<h3>Non-standard functions</h3>
 
 • ft_substr - returns a substring from a string.
 
@@ -174,7 +224,8 @@ Non-standard functions
 • ft_putendl_fd - output a string to a file descriptor, followed by a new line.
 
 • ft_putnbr_fd - output a number to a file descriptor.
-Linked list functions
+
+<h3>Linked list functions</h3>
 
 • ft_lstnew - creates a new list element.
 
@@ -191,42 +242,14 @@ Linked list functions
 • ft_lstiter - applies a function to each element of a list.
 
 • ft_lstmap - applies a function to each element of a list.
-get_next_line (2nd Project at 42)
 
-• get_next_line - reads any valid file line by line.
-Functions from "ft_printf.h" (3rd Project at 42)
-
-• ft_printf - output a formatted string in stdout.
-
-• ft_argument_c - output a char in stdout.
-
-• ft_arguments_d_i - output an integer number in stdout.
-
-• ft_argument_p - output a memory address(a hexadecimal) in stdout.
-
-• ft_argument_percent - output an percent sign in stdout.
-
-• ft_argument_s - output a string in stdout.
-
-• ft_argument_u - output an unsigned integer in stdout.
-
-• ft_arguments_x - output a hexadecimal number in stdout.
-
-• ft_decimal_length - returns the length of a decimal number.
-
-• ft_free_ptr - free memory for a pointer and set its value to null.
-
-• ft_decimal_converter_to_hex - converts a decimal number to hexadecimal.
-
-• ft_hex_length - returns the length of a hexadecimal number.
-
-• ft_print_reversed_str - print a string backwards.
-Useful Functions
+<h3>Useful Functions</h3>
 
 • ft_count_occurrences - returns the number of occurrences of a char in a string.
 
 • ft_free_str_array - free memory from an array of strings.
-Makefile
+
+---
 
 <h2>Makefile</h2>
 
@@ -400,7 +423,7 @@ Go into the test folder and run the mandatory test and then the bonus test:
 
 42 is a global education initiative that proposes a new way of learning technology: all 42 schools are using peer2peer gamified methodology and are completely tuition free for students. 42 is a brand well known by employers in many countries as one of the most rigorous educational methodologies. 
 
-PROJECT-BASED LEARNING
+<h3>PROJECT-BASED LEARNING</h3>
 
 Before you start studying with us, you need to complete the Piscine, a 26-day coding challenge.  Once you pass it your 12-18 month coding journey begins. 
 
