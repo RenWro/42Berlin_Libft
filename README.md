@@ -148,7 +148,8 @@ Your Makefile must compile with the flags -Wall, -Wextra and -Werror.
 <h2>Functions</h2>
 
 Those are the my Libft's functions today - some of them are not part of the subject - Once we're allowed to keep expanding our library to help us in other projects at 42.
-Functions from <ctype.h>
+
+<h3>Functions from <ctype.h></h3>
 
 • ft_isalpha - checks for an alphabetic character.
 
@@ -163,7 +164,8 @@ Functions from <ctype.h>
 • ft_toupper - convert char to uppercase.
 
 • ft_tolower - convert char to lowercase.
-Functions from <string.h>
+
+<h3>Functions from <string.h></h3>
 
 • ft_memset - fill memory with a constant byte.
 
@@ -192,12 +194,14 @@ Functions from <string.h>
 • ft_strnstr - locate a substring in a string.
 
 • ft_strdup - creates a dupplicate for the string passed as parameter.
-Functions from <stdlib.h>
+
+<h3>Functions from <stdlib.h></h3>
 
 • ft_atoi - convert a string to an integer.
 
 • ft_calloc - allocates memory and sets its bytes' values to 0.
-Non-standard functions
+
+<h3>Non-standard functions</h3>
 
 • ft_substr - returns a substring from a string.
 
@@ -220,7 +224,8 @@ Non-standard functions
 • ft_putendl_fd - output a string to a file descriptor, followed by a new line.
 
 • ft_putnbr_fd - output a number to a file descriptor.
-Linked list functions
+
+<h3>Linked list functions</h3>
 
 • ft_lstnew - creates a new list element.
 
@@ -237,37 +242,8 @@ Linked list functions
 • ft_lstiter - applies a function to each element of a list.
 
 • ft_lstmap - applies a function to each element of a list.
-get_next_line (2nd Project at 42)
 
-• get_next_line - reads any valid file line by line.
-Functions from "ft_printf.h" (3rd Project at 42)
-
-• ft_printf - output a formatted string in stdout.
-
-• ft_argument_c - output a char in stdout.
-
-• ft_arguments_d_i - output an integer number in stdout.
-
-• ft_argument_p - output a memory address(a hexadecimal) in stdout.
-
-• ft_argument_percent - output an percent sign in stdout.
-
-• ft_argument_s - output a string in stdout.
-
-• ft_argument_u - output an unsigned integer in stdout.
-
-• ft_arguments_x - output a hexadecimal number in stdout.
-
-• ft_decimal_length - returns the length of a decimal number.
-
-• ft_free_ptr - free memory for a pointer and set its value to null.
-
-• ft_decimal_converter_to_hex - converts a decimal number to hexadecimal.
-
-• ft_hex_length - returns the length of a hexadecimal number.
-
-• ft_print_reversed_str - print a string backwards.
-Useful Functions
+<h3>Useful Functions</h3>
 
 • ft_count_occurrences - returns the number of occurrences of a char in a string.
 
