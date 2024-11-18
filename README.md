@@ -243,12 +243,6 @@ Those are the my Libft's functions today - some of them are not part of the subj
 
 • ft_lstmap - applies a function to each element of a list.
 
-<h3>Useful Functions</h3>
-
-• ft_count_occurrences - returns the number of occurrences of a char in a string.
-
-• ft_free_str_array - free memory from an array of strings.
-
 ---
 
 <h2>Makefile</h2>
