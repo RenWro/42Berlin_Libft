@@ -1,0 +1,16 @@
+Valgrind:
+
+make main
+valgrind --leak-check=full --track-origins=yes ./main
+
+
+
+make main_bonus
+valgrind --leak-check=full --track-origins=yes ./main_bonus
+
+make fclean
+
+francinette:
+paco
+
+francinette --strict
